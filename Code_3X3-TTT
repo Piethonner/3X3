@@ -1,12 +1,13 @@
-### Now it replaces box with an X, but can potentially be a tic-tac-toe game. Pretty sure I'll do it in the future ###
+# Now it replaces box with an X, but can potentially be a tic-tac-toe game. Pretty sure I'll do it in the future
+
 row1 = ["⬜️","⬜️","⬜️"]
 row2 = ["⬜️","⬜️","⬜️"]
 row3 = ["⬜️","⬜️","⬜️"]
 squares = [row1, row2, row3]
 print(f"{row1}\n{row2}\n{row3}")
-position = input("Where do you want to put the "X"? ")
+position = input("Where do you want to put the 'X'?: ")
+
 rows = int(position[0])
 columns = int(position[1])
 squares[rows - 1][columns -1] = "X"
 print(f"{row1}\n{row2}\n{row3}")
-## Ende! ##
